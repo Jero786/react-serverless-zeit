@@ -29,7 +29,7 @@ That will start app on: `http://localhost:3000`
  ```   
  In order to perform deploys, you will need to have a Zeit account and be [authenticated](https://zeit.co/docs/now-cli#commands/login) by now-cli  
   
-## Explain why each decisions made  
+## Explanation about why each decision made
   
 - At the architecture level, I follow mainly two power full principles: [KISS](https://en.wikipedia.org/wiki/KISS_principle) and [Rule of Least Power](https://en.wikipedia.org/wiki/Rule_of_least_power). 
 - Following KISS, allow us to choose wisely a state Management of our UI. For this case, there is not needed to use any complex state management solutions like `Redux`, `Mobx` or even `Apollo/GraphQL` (despite that GraphQL have [declarative API](https://medium.com/@jero786/graphql-at-high-level-79b842b95b64), you need to create more levels of abstractions like data sources, schemas, resolvers, etc. For that, I prefer to use the imperative approach, like REST, in favor to optimize and follow always simplicity for our use case.
