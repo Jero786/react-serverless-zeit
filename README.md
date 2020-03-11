@@ -40,7 +40,9 @@ That will start app on: `http://localhost:3000`
 - SSR: For this particular case (Movie Searcher), SSR gives us a really improvement at the traffic level. On the other hand, doing a really fast first load page gives us a really improvement at the UX level as well.
 - Typescript: we use static, because it a way to catch errors early. I think, despite of is a super set of JS, Typescript gives us a tool to avoid a bunch of errors and catch early in the life cycle of our development process, such us avoid null-pointer exceptions (the billion dollar mistake) among others. 
 
-## Pending tools pending to implement (out of time)
+## Pending tools to be implemented (out of time)
 - CI travis
-- Husky/Prettier
+- Husky/Prettier (with pre-commit). Also codecov & LGTM.
 - Add Eslint and others tools to measure and fix code.
+- Add More UT API, hooks and React component.
+- Adding New Relic to measure and get notified when Errors come up from both, client and service side.
