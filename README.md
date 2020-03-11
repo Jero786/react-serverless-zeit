@@ -18,16 +18,15 @@ yarn dev
 ``` 
 That will start app on: `http://localhost:3000`    
  
- ## Run test:
+## Run test:
 ```
  yarn test
 ```  
- ## Deploy to staging  
-  
+## Deploy to staging    
 ```  
  now
- ```   
- In order to perform deploys, you will need to have a Zeit account and be [authenticated](https://zeit.co/docs/now-cli#commands/login) by now-cli  
+```   
+In order to perform deploys, you will need a Zeit account and also be [authenticated](https://zeit.co/docs/now-cli#commands/login) by now-cli. 
   
 ## Explanation about why each decision made
   
@@ -41,8 +40,9 @@ That will start app on: `http://localhost:3000`
 - Typescript: we use static, because it a way to catch errors early. I think, despite of is a super set of JS, Typescript gives us a tool to avoid a bunch of errors and catch early in the life cycle of our development process, such us avoid null-pointer exceptions (the billion dollar mistake) among others. 
 
 ## Pending tools to be implemented (out of time)
-- CI travis
-- Husky/Prettier (with pre-commit). Also codecov & LGTM.
-- Add Eslint and others tools to measure and fix code.
+- Add CI Travis.
+- Add Husky & Prettier (with pre-commit). 
+- Add codecov & LGTM.
+- Add Eslint.
 - Add More UT API, hooks and React component.
-- Adding New Relic to measure and get notified when Errors come up from both, client and service side.
+- Add New Relic to measure and get notified when Errors come up from both (client and server side).
