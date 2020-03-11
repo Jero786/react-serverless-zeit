@@ -1,11 +1,11 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-import { red } from '@material-ui/core/colors';
+import { createMuiTheme } from '@material-ui/core/styles'
+import { red } from '@material-ui/core/colors'
 
 // Colors
-const PRIMARY_COLOR = '#556cd6';
-const SECONDARY_COLOR = '#19857b';
-const ERROR_COLOR = red.A400;
-const BG_COLOR = '#000000';
+const PRIMARY_COLOR = '#556cd6'
+const SECONDARY_COLOR = '#19857b'
+const ERROR_COLOR = red.A400
+const BG_COLOR = '#000000'
 
 const DEFAULT_BP:any = {
   xs: 0,
@@ -13,12 +13,12 @@ const DEFAULT_BP:any = {
   md: 960,
   lg: 1280,
   xl: 1920
-};
+}
 
 const breakpoints:any = {
   keys: ['xs', 'sm', 'md', 'lg', 'xl'],
   up: (key:string) => `@media (min-width:${DEFAULT_BP[key]}px)`
-};
+}
 
 const palette:any = {
   type: 'dark',
@@ -34,16 +34,16 @@ const palette:any = {
   background: {
     default: BG_COLOR
   }
-};
+}
 
 const typography = {
   fontFamily: 'Abel'
-};
+}
 
 const theme = createMuiTheme({
   breakpoints,
   palette,
   typography
-});
+})
 
-export default theme;
+export default theme

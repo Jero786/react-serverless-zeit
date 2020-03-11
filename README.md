@@ -37,12 +37,12 @@ In order to perform deploys, you will need a Zeit account and also be [authentic
 - Testing framework: I decide to use react-testing-library in favor to avoid testing details and favor to focus test use cases, for [more details](https://kentcdodds.com/blog/testing-implementation-details).
 - Coverage: I follow the principle of looking for the sweet spot of our use case [more detail here](https://medium.com/@jero786/write-test-not-too-many-mostly-integration-bad298f69e1a).
 - SSR: For this particular case (Movie Searcher), SSR gives us a really improvement at the traffic level. On the other hand, doing a really fast first load page gives us a really improvement at the UX level as well.
-- Typescript: we use static, because it a way to catch errors early. I think, despite of is a super set of JS, Typescript gives us a tool to avoid a bunch of errors and catch early in the life cycle of our development process, such us avoid null-pointer exceptions (the billion dollar mistake) among others. 
+- Typescript: As a superset of JS, it gives us the best of both worlds (Strong/Inferred Types vs dynamic types). Allow us to catch early our bugs in the life cycle of the development process. And also help general commons problems, like null-pointer exceptions (the billion-dollar mistake). And the best is we can set how much strict types do you want or need to be.
+- Standardx: JavaScript Standard Style with custom tweeks, allow us to follow industry standards with zero configuration, again, be focus in the important for our use case.
 
 ## Pending tools to be implemented (out of time)
 - Add CI Travis.
 - Add Husky & Prettier (with pre-commit). 
 - Add codecov & LGTM.
-- Add Eslint.
 - Add More UT API, hooks and React component.
 - Add New Relic to measure and get notified when Errors come up from both (client and server side).
