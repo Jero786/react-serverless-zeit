@@ -39,7 +39,6 @@ In order to perform deploys, you will need a Zeit account and also be [authentic
 - SSR: For this particular case (Movie Searcher), SSR gives us a really improvement at the traffic level. On the other hand, doing a really fast first load page gives us a really improvement at the UX level as well.
 - Typescript: As a superset of JS, it gives us the best of both worlds (Strong/Inferred Types vs dynamic types). Allow us to catch early our bugs in the life cycle of the development process. And also help general commons problems, like null-pointer exceptions (the billion-dollar mistake). And finally, you can define how much strict types validation do you want or need to be.
 - Standardx: JavaScript Standard Style with custom tweeks, allow us to follow industry standards with zero configuration, again, be focus in the important for our use case.
-- Zeit/Now: A cloud hosting service with zero configuration by default, following the same principle idea already explained.
 
 ## Pending tools to be implemented (out of time)
 - Add CI Travis.
